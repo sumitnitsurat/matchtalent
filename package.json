@@ -7,23 +7,38 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "start:web": "react-scripts start",
+    "build:web": "react-scripts build"
   },
   "dependencies": {
-    "react": "16.13.1",
-    "react-native": "0.63.2"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-native": "0.63.2",
+    "react-native-web": "^0.13.9",
+    "react-scripts": "^3.4.3"
   },
   "devDependencies": {
     "@babel/core": "7.11.6",
     "@babel/runtime": "7.11.2",
     "@react-native-community/eslint-config": "1.1.0",
-    "babel-jest": "25.5.1",
     "eslint": "6.8.0",
-    "jest": "25.5.4",
     "metro-react-native-babel-preset": "0.59.0",
     "react-test-renderer": "16.13.1"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
