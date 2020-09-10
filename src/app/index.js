@@ -15,14 +15,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-
-// import {
-//   Header,
-//   LearnMoreLinks,
-//   Colors,
-//   DebugInstructions,
-//   ReloadInstructions,
-// } from 'react-native/Libraries/NewAppScreen';
+import {Header} from "./UI";
 
 const App = () => {
   return (
@@ -32,7 +25,7 @@ const App = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-          {/* <Header /> */}
+          <Header centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }} />
           {global.HermesInternal == null ? null : (
             <View style={styles.engine}>
               <Text style={styles.footer}>Engine: Hermes</Text>
